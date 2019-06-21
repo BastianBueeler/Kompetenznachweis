@@ -46,7 +46,8 @@ public class SeleniumTest extends TestCase {
 		WebElement button2 = driver.findElement(By.xpath("/html/body/form[2]/p/input"));
 		button2.click();
 		
-		
+		WebElement label = driver.findElement(By.xpath("/html/body/span"));
+		assertTrue(label.getText().trim().contains("Id " + IDAusgabe));
 		
 		
 	}
