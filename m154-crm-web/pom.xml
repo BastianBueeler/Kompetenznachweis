@@ -83,7 +83,7 @@
 					</authConfig-->
 					<images>
 						<image>
-							<name>michaelhauck/m154-crm-fallstudie</name>
+							<name>bastianbueeler/m154-crm-fallstudie</name>
 							<build>
 								<dockerFileDir>${project.basedir}</dockerFileDir>
 								<assembly>
