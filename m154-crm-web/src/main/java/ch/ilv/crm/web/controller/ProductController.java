@@ -29,7 +29,7 @@ public class ProductController {
         IProduct newProduct = ProductFactory.getInstance().createProduct(desc);
         ProductFactory.getInstance().saveProduct(newProduct);
         
-        model.put("msg", "Product " + newProduct.getId() + ", " + desc + " saved!");
+        model.put("msg", newProduct.getId());
         ctx.render(Path.Template.PRODUCTS, model);
     };
     
